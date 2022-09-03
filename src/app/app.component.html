@@ -7,5 +7,14 @@
   Idade: <u>{{ getIdade() }} anos.</u>
 </h3>
 <hr />
-<h2>Contador: {{ counter }}s</h2>
-<h3>{{ getMinuto() }}:{{ getSegundos() }}</h3>
+<h2>
+  Contador: <strong>{{ counter }}s</strong>
+</h2>
+<h3>
+  Contador: <strong>{{ getMinuto() }}:{{ getSegundos() }}</strong>
+</h3>
+<div *ngFor="let n of getNumbers()">
+  {{ n }}
+  <span *ngIf="n % 2 == 0">PAR</span>
+  <span *ngIf="n % 2 != 0">IMPAR</span>
+</div>

@@ -24,4 +24,8 @@ export class AppComponent {
   getSegundos() {
     return Math.trunc(this.counter % 60);
   }
+
+  getNumbers() {
+    return [28, 12, 14, 13, 9, 13];
+  }
 }
